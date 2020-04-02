@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Form.css';
 
 export default class Form extends Component {
@@ -71,4 +72,8 @@ export default class Form extends Component {
       </form>
     )
   }
+}
+
+Form.propTypes = {
+  addReservation: PropTypes.func
 }
