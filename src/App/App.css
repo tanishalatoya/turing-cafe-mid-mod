@@ -17,3 +17,11 @@
   font-family: 'Pacifico', cursive;
   font-size: 50px;
 }
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(0.95);
+}
