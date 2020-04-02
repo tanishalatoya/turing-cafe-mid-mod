@@ -16,6 +16,11 @@ export default class Form extends Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
+  makeReservation = e => {
+    e.preventDefault();
+    console.log(this.state);
+  }
+
   render() {
     return (
       <form>
@@ -50,6 +55,7 @@ export default class Form extends Component {
         <button
           type='button'
           id='submit'
+          onClick={e => this.makeReservation(e)}
         >Make Reservation
         </button>
       </form>
