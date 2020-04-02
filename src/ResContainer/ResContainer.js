@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from '../Card/Card';
+import './ResContainer.css'
 
 export const ResContainer = (props) => {
   const allReservations = props.reservations.map(reservation => {
