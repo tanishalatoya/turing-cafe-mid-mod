@@ -12,6 +12,10 @@ export default class Form extends Component {
     }
   }
 
+  updateValue = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
   render() {
     return (
       <form>
@@ -37,7 +41,7 @@ export default class Form extends Component {
         onChange={e => this.updateValue(e)}
         />
         <input
-        type='text'
+        type='number'
         placeholder='Number of guests'
         name='number'
         value={this.state.number}
