@@ -41,6 +41,7 @@ export default class Form extends Component {
         />
         <button
           type='button'
+          id='submit'
         >Make Reservation
         </button>
       </form>
