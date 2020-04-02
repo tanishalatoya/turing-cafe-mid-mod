@@ -18,7 +18,7 @@ export default class Form extends Component {
 
   makeReservation = e => {
     e.preventDefault();
-    console.log(this.state);
+    this.props.addReservation(this.state)
   }
 
   render() {
