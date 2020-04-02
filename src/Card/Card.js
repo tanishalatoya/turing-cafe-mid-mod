@@ -11,7 +11,9 @@ export const Card = (props) => {
       <button
         type='button'
         class='cancel'
-        id={props.id}>Cancel
+        id={props.id}
+        onClick={() => props.deleteReservation(props.id)}
+        >Cancel
       </button>
     </section>
   )
