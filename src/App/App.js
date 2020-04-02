@@ -11,6 +11,10 @@ class App extends Component {
     }
   }
 
+  addReservation = (newReservation) => {
+    this.setState({ reservations: [...this.state.reservations, {...newReservation}] })
+  }
+
   componentDidMount() {
     fetch('http://localhost:3001/api/v1/reservations')
       .then(response => response.json())
