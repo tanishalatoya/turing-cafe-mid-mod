@@ -15,6 +15,13 @@ class App extends Component {
     this.setState({ reservations: [...this.state.reservations, {...newReservation}] })
   }
 
+  deleteReservation = (reservationId) => {
+    const updatedReservations = this.state.reservations.filter(reservation => {
+      return reservation.id !== reservationId
+    })
+    this.setState({ reservations: updatedReservations })
+  }
+
   componentDidMount() {
     fetch('http://localhost:3001/api/v1/reservations')
       .then(response => response.json())
@@ -29,11 +36,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-        <Form 
+        <Form
           addReservation={this.addReservation}
         />
         <ResContainer
           reservations={this.state.reservations}
+          deleteReservation={this.deleteReservation}
         />
       </div>
     )
