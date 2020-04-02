@@ -11,6 +11,7 @@ export const ResContainer = (props) => {
       number={reservation.number}
       id={reservation.id}
       key={reservation.id}
+      deleteReservation={props.deleteReservation}
     />
   })
   return (
