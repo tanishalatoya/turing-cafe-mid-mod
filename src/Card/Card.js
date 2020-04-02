@@ -8,7 +8,11 @@ export const Card = (props) => {
       <p>{props.date}</p>
       <p>{props.time} pm</p>
       <p>Number of guests: {props.number}</p>
-      <button type='button' class='cancel'>Cancel</button>
+      <button
+        type='button'
+        class='cancel'
+        id={props.id}>Cancel
+      </button>
     </section>
   )
 }
