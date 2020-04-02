@@ -20,24 +20,28 @@ export default class Form extends Component {
         placeholder='Name'
         name='name'
         value={this.state.name}
+        onChange={e => this.updateValue(e)}
         />
         <input
         type='text'
         placeholder='Date (mm/yy)'
         name='date'
-        value={this.state.name}
+        value={this.state.date}
+        onChange={e => this.updateValue(e)}
         />
         <input
         type='text'
         placeholder='Time'
         name='time'
-        value={this.state.name}
+        value={this.state.time}
+        onChange={e => this.updateValue(e)}
         />
         <input
         type='text'
         placeholder='Number of guests'
         name='number'
-        value={this.state.name}
+        value={this.state.number}
+        onChange={e => this.updateValue(e)}
         />
         <button
           type='button'
@@ -46,6 +50,5 @@ export default class Form extends Component {
         </button>
       </form>
     )
-
   }
 }
