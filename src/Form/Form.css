@@ -1,0 +1,19 @@
+/* STYLING FOR FORM */
+
+form {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+}
+
+input {
+  font-size: 1.2em;
+  padding: .5%;
+}
+
+#submit {
+  background: #048080;
+  color: #fff;
+  font-size: 1em;
+  padding: 0.5% 2%;
+}
