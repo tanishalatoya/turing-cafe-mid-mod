@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.css';
 
 export const Card = (props) => {
@@ -17,4 +18,13 @@ export const Card = (props) => {
       </button>
     </section>
   )
+}
+
+Card.propTypes = {
+  name: PropTypes.string,
+  date: PropTypes.string,
+  time: PropTypes.string,
+  number: PropTypes.number,
+  id: PropTypes.number,
+  deleteReservation: PropTypes.func
 }
