@@ -1,0 +1,22 @@
+/* STYLING FOR RES-CARD */
+
+.res-card {
+  background: #fff;
+  border: 5px solid #048080;
+  border-radius: 10px;
+  margin: 0 2% 2% 0;
+  height: 15em;
+  width: 20em;
+}
+
+h2 {
+  color: #048080;
+}
+
+.cancel {
+  background: #048080;
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 5%;
+  width: 50%;
+}
