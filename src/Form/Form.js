@@ -17,8 +17,18 @@ export default class Form extends Component {
   }
 
   makeReservation = e => {
-    e.preventDefault();
+    e.preventDefault()
     this.props.addReservation(this.state)
+    this.clearInputs()
+  }
+
+  clearInputs = () => {
+    this.setState({
+      name: '',
+      date: '',
+      time: '',
+      number: ''
+    })
   }
 
   render() {
